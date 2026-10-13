@@ -1,0 +1,31 @@
+# OAuth credentials and authentication tokens
+credentials.json
+token.json
+.env
+.env.*
+*.env
+
+# SQLite databases, journals, and WAL files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Runtime logs and generated digests containing personal email content
+logs/
+*.log
+digests/
+
+# Virtual environments & package manager artifacts
+.venv/
+venv/
+ENV/
+
+# Python byte-code and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/

@@ -1,0 +1,118 @@
+{
+  "metrics": {
+    "total_cases": 5,
+    "successful_analyses": 5,
+    "failed_analyses": 0,
+    "schema_or_analysis_failure_rate": 0.0,
+    "category_accuracy": 1.0,
+    "action_precision": 1.0,
+    "action_recall": 1.0,
+    "deadline_presence_accuracy": 1.0,
+    "deadline_text_match": 1.0,
+    "median_latency_seconds": 131.55165110000053,
+    "max_latency_seconds": 175.5452363000004,
+    "min_latency_seconds": 74.96392500000002
+  },
+  "results": [
+    {
+      "id": "case_01",
+      "scenario": "Hackathon registration closes tomorrow",
+      "received_at": "2026-10-14T18:00:00-04:00",
+      "expected": {
+        "category": "hackathon",
+        "urgency": "urgent",
+        "requires_action": true,
+        "deadline": "tomorrow at 5:00 PM EST"
+      },
+      "prediction": {
+        "category": "hackathon",
+        "urgency": "urgent",
+        "summary": "HackAI 2026 registration deadline",
+        "deadline": "tomorrow at 5:00 PM EST",
+        "requires_action": true
+      },
+      "error": null,
+      "latency_seconds": 175.5452363000004
+    },
+    {
+      "id": "case_02",
+      "scenario": "Data science internship interview invitation",
+      "received_at": "2026-10-14T09:00:00-04:00",
+      "expected": {
+        "category": "job",
+        "urgency": "high",
+        "requires_action": true,
+        "deadline": "this Friday at 11:59 PM"
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "urgent",
+        "summary": "Interview invitation for Data Science Intern position at Acme Corp",
+        "deadline": "this Friday at 11:59 PM",
+        "requires_action": true
+      },
+      "error": null,
+      "latency_seconds": 131.55165110000053
+    },
+    {
+      "id": "case_03",
+      "scenario": "General newsletter with no requested action",
+      "received_at": "2026-10-12T08:00:00-04:00",
+      "expected": {
+        "category": "other",
+        "urgency": "low",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "other",
+        "urgency": "normal",
+        "summary": "Weekly newsletter covering Python 3.13 features, JIT compiler benchmarks, and community open-source projects.",
+        "deadline": null,
+        "requires_action": false
+      },
+      "error": null,
+      "latency_seconds": 74.96392500000002
+    },
+    {
+      "id": "case_04",
+      "scenario": "Job application rejection",
+      "received_at": "2026-10-13T14:30:00-04:00",
+      "expected": {
+        "category": "job",
+        "urgency": "low",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "normal",
+        "summary": "Rejection of application for Machine Learning Engineer position.",
+        "deadline": null,
+        "requires_action": false
+      },
+      "error": null,
+      "latency_seconds": 98.1747892000003
+    },
+    {
+      "id": "case_05",
+      "scenario": "Competition submission deadline tonight",
+      "received_at": "2026-10-15T10:00:00+00:00",
+      "expected": {
+        "category": "competition",
+        "urgency": "urgent",
+        "requires_action": true,
+        "deadline": "tonight at 23:59 UTC"
+      },
+      "prediction": {
+        "category": "competition",
+        "urgency": "urgent",
+        "summary": "Final submission deadline for Kaggle LLM Challenge",
+        "deadline": "tonight at 23:59 UTC",
+        "requires_action": true
+      },
+      "error": null,
+      "latency_seconds": 133.03873219999878
+    }
+  ]
+}

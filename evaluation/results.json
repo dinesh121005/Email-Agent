@@ -1,0 +1,396 @@
+{
+  "metrics": {
+    "total_cases": 11,
+    "successful_analyses": 11,
+    "failed_analyses": 0,
+    "schema_or_analysis_failure_rate": 0.0,
+    "intent_accuracy": 0.7272727272727273,
+    "importance_accuracy": 1.0,
+    "category_accuracy": 0.9090909090909091,
+    "urgency_accuracy": 1.0,
+    "action_precision": 0.8571428571428571,
+    "action_recall": 1.0,
+    "promotional_false_positive_rate": 0.25,
+    "important_email_recall": 1.0,
+    "deadline_presence_accuracy": 1.0,
+    "deadline_normalization_coverage": 1.0,
+    "deadline_normalization_accuracy": 1.0,
+    "deadline_text_match": 0.5,
+    "median_latency_seconds": 16.376777200000106,
+    "max_latency_seconds": 19.642980399999942,
+    "min_latency_seconds": 14.955267400000139
+  },
+  "results": [
+    {
+      "id": "case_01",
+      "scenario": "Hackathon registration closes tomorrow",
+      "received_at": "2026-10-14T18:00:00-04:00",
+      "expected": {
+        "category": "hackathon",
+        "intent": "hackathon",
+        "importance": "high",
+        "urgency": "urgent",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": "tomorrow at 5:00 PM EST"
+      },
+      "prediction": {
+        "category": "hackathon",
+        "urgency": "urgent",
+        "summary": "A reminder for HackAI 2026 registration closure with a deadline of tomorrow at 5:00 PM EST.",
+        "deadline": "tomorrow at 5:00 PM EST",
+        "requires_action": true,
+        "intent": "hackathon",
+        "importance": "high",
+        "spam_status": "not_spam",
+        "recommended_action": "Submit your team details before the registration closes.",
+        "priority_reason": "The email contains a clear and imminent deadline for an important event.",
+        "evidence": [
+          "This is a final reminder that registration for HackAI 2026 will officially close tomorrow at 5:00 PM EST.",
+          "Please make sure to submit your team details before the portal locks."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 17.346277999999984
+    },
+    {
+      "id": "case_02",
+      "scenario": "Data science internship interview invitation with deadline",
+      "received_at": "2026-10-14T09:00:00-04:00",
+      "expected": {
+        "category": "job",
+        "intent": "interview_invitation",
+        "importance": "high",
+        "urgency": "high",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": "this Friday at 11:59 PM"
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "high",
+        "summary": "Acme Corp is inviting the candidate for a technical interview for the Data Science Intern position and requests them to select a slot by this Friday at 11:59 PM.",
+        "deadline": "this Friday at 11:59 PM",
+        "requires_action": true,
+        "intent": "interview_scheduling",
+        "importance": "high",
+        "spam_status": "not_spam",
+        "recommended_action": "Select an available slot on the scheduling portal.",
+        "priority_reason": "Verified interview communication requiring candidate preparation, scheduling, or attendance.",
+        "evidence": [
+          "We were impressed with your profile and would like to invite you for a 45-minute technical interview.",
+          "Please choose an available slot on our scheduling portal by this Friday at 11:59 PM.",
+          "Regards, Acme Recruiting Team"
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 19.642980399999942
+    },
+    {
+      "id": "case_03",
+      "scenario": "General newsletter with no requested action",
+      "received_at": "2026-10-12T08:00:00-04:00",
+      "expected": {
+        "category": "other",
+        "intent": "newsletter",
+        "importance": "low",
+        "urgency": "low",
+        "spam_status": "suspected_spam",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "other",
+        "urgency": "low",
+        "summary": "This email is a newsletter issue covering new features and developments in Python 3.13.",
+        "deadline": null,
+        "requires_action": false,
+        "intent": "promotional",
+        "importance": "low",
+        "spam_status": "suspected_spam",
+        "recommended_action": "No action needed (promotional content).",
+        "priority_reason": "Promotional email or repetitive job service advertisement; suppressed from priority inbox.",
+        "evidence": [
+          "Python Weekly Issue #620",
+          "In this issue, we cover the new features in Python 3.13, JIT compiler benchmarks, and top community open-source projects.",
+          "Enjoy the read"
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 15.250204500000109
+    },
+    {
+      "id": "case_04",
+      "scenario": "Job application rejection",
+      "received_at": "2026-10-13T14:30:00-04:00",
+      "expected": {
+        "category": "job",
+        "intent": "application_update",
+        "importance": "low",
+        "urgency": "low",
+        "spam_status": "not_spam",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "low",
+        "summary": "The applicant was notified that they were not selected for the Machine Learning Engineer role and that another candidate was chosen.",
+        "deadline": null,
+        "requires_action": false,
+        "intent": "application_update",
+        "importance": "low",
+        "spam_status": "not_spam",
+        "recommended_action": "Archive or record status.",
+        "priority_reason": "Application status update (not selected); no candidate action required.",
+        "evidence": [
+          "Thank you for taking the time to interview with us for the Machine Learning Engineer role.",
+          "we have decided to move forward with another candidate whose experience more closely matches our immediate needs.",
+          "We wish you the best in your job search."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 16.098126400000183
+    },
+    {
+      "id": "case_05",
+      "scenario": "Competition submission deadline tonight",
+      "received_at": "2026-10-15T10:00:00+00:00",
+      "expected": {
+        "category": "competition",
+        "intent": "competition",
+        "importance": "high",
+        "urgency": "urgent",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": "tonight at 23:59 UTC"
+      },
+      "prediction": {
+        "category": "competition",
+        "urgency": "urgent",
+        "summary": "Participants are reminded that the final submission deadline for the Kaggle LLM Challenge is tonight at 23:59 UTC.",
+        "deadline": "23:59 UTC",
+        "requires_action": true,
+        "intent": "competition",
+        "importance": "high",
+        "spam_status": "not_spam",
+        "recommended_action": "Submit code notebooks before the deadline.",
+        "priority_reason": "The email conveys a strict deadline for a competition, requiring immediate action from the recipient.",
+        "evidence": [
+          "Please note the final submission window for the Kaggle LLM Challenge closes tonight at 23:59 UTC.",
+          "Late submissions cannot be accepted under any circumstances.",
+          "Ensure your code notebooks are submitted and verified."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 17.18690340000012
+    },
+    {
+      "id": "case_06",
+      "scenario": "Genuine interview invitation with no explicit response deadline",
+      "received_at": "2026-10-14T10:00:00+00:00",
+      "expected": {
+        "category": "job",
+        "intent": "interview_invitation",
+        "importance": "high",
+        "urgency": "normal",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "normal",
+        "summary": "Candidate has been invited to a technical screening interview with HackerRank for a Software Development Engineer Intern role.",
+        "deadline": null,
+        "requires_action": true,
+        "intent": "interview_invitation",
+        "importance": "high",
+        "spam_status": "not_spam",
+        "recommended_action": "Review the attached guidelines and reply with your availability.",
+        "priority_reason": "Verified interview communication requiring candidate preparation, scheduling, or attendance.",
+        "evidence": [
+          "We would like to invite you for a 60-minute technical interview screening with our engineering lead.",
+          "Please review the attached guidelines and let us know your general availability for next week."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 15.721278400000301
+    },
+    {
+      "id": "case_07",
+      "scenario": "Interview happening in 2 hours",
+      "received_at": "2026-10-14T12:00:00+00:00",
+      "expected": {
+        "category": "job",
+        "intent": "interview_invitation",
+        "importance": "critical",
+        "urgency": "urgent",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": "today at 2:00 PM UTC"
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "urgent",
+        "summary": "The email is a reminder for a technical interview with Stripe starting at 2:00 PM UTC today.",
+        "deadline": "2:00 PM UTC today",
+        "requires_action": true,
+        "intent": "interview_invitation",
+        "importance": "critical",
+        "spam_status": "not_spam",
+        "recommended_action": "Join the interview at the specified time.",
+        "priority_reason": "Verified interview communication requiring candidate preparation, scheduling, or attendance.",
+        "evidence": [
+          "Technical Interview starting at 2:00 PM today",
+          "your technical interview with Stripe starts today at 2:00 PM UTC on Google Meet",
+          "Meeting link: https://meet.google.com/xyz-abc-def"
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 16.72751560000006
+    },
+    {
+      "id": "case_08",
+      "scenario": "Naukri promotional email advertising profile views",
+      "received_at": "2026-10-13T11:00:00+00:00",
+      "expected": {
+        "category": "other",
+        "intent": "promotional",
+        "importance": "low",
+        "urgency": "low",
+        "spam_status": "suspected_spam",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "other",
+        "urgency": "low",
+        "summary": "Naukri is promoting its FastForward service to increase profile views for job seekers.",
+        "deadline": null,
+        "requires_action": false,
+        "intent": "promotional",
+        "importance": "low",
+        "spam_status": "suspected_spam",
+        "recommended_action": "No action needed (promotional content).",
+        "priority_reason": "Promotional email or repetitive job service advertisement; suppressed from priority inbox.",
+        "evidence": [
+          "Recruiters are searching for candidates with your profile.",
+          "Upgrade to Naukri FastForward today and get highlighted to 1000s of top companies.",
+          "Avail special 30% discount."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 16.376777200000106
+    },
+    {
+      "id": "case_09",
+      "scenario": "Promotional email advertising job-tracking services",
+      "received_at": "2026-10-12T15:00:00+00:00",
+      "expected": {
+        "category": "other",
+        "intent": "promotional",
+        "importance": "low",
+        "urgency": "low",
+        "spam_status": "suspected_spam",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "other",
+        "urgency": "low",
+        "summary": "An email from Huntr promotes their auto-track chrome extension for job applications.",
+        "deadline": null,
+        "requires_action": false,
+        "intent": "promotional",
+        "importance": "low",
+        "spam_status": "suspected_spam",
+        "recommended_action": "No action needed (promotional content).",
+        "priority_reason": "Promotional email or repetitive job service advertisement; suppressed from priority inbox.",
+        "evidence": [
+          "Tired of messy spreadsheets?",
+          "Start your 14-day free trial now.",
+          "Use Huntr auto-track chrome extension to automatically organize job applications from LinkedIn and Indeed."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 14.955267400000139
+    },
+    {
+      "id": "case_10",
+      "scenario": "Direct recruiter communication for a specific role",
+      "received_at": "2026-10-14T08:30:00+00:00",
+      "expected": {
+        "category": "job",
+        "intent": "job_opportunity",
+        "importance": "high",
+        "urgency": "normal",
+        "spam_status": "not_spam",
+        "requires_action": true,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "normal",
+        "summary": "A senior technical recruiter from Datadog is reaching out for an introductory call regarding a senior Python backend engineer position.",
+        "deadline": null,
+        "requires_action": true,
+        "intent": "job_opportunity",
+        "importance": "high",
+        "spam_status": "not_spam",
+        "recommended_action": "Respond to the email to schedule the introductory call.",
+        "priority_reason": "This is a genuine job opportunity from a reputable company, making it important for the recipient to consider.",
+        "evidence": [
+          "I came across your GitHub open-source contributions and was very impressed.",
+          "Would you be open to a 15-minute introductory call sometime this week?",
+          "Senior Technical Recruiter, Datadog"
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 16.873201400000198
+    },
+    {
+      "id": "case_11",
+      "scenario": "Ambiguous email that may contain a real opportunity",
+      "received_at": "2026-10-14T14:00:00+00:00",
+      "expected": {
+        "category": "uncertain",
+        "intent": "uncertain",
+        "importance": "normal",
+        "urgency": "normal",
+        "spam_status": "suspected_spam",
+        "requires_action": false,
+        "deadline": null
+      },
+      "prediction": {
+        "category": "job",
+        "urgency": "normal",
+        "summary": "A recruiter from a stealth venture company is reaching out to explore potential collaboration and career opportunities based on the recipient's online profile.",
+        "deadline": null,
+        "requires_action": true,
+        "intent": "job_opportunity",
+        "importance": "normal",
+        "spam_status": "not_spam",
+        "recommended_action": "Review the portal and provide any necessary information if interested.",
+        "priority_reason": "The email is not time-sensitive but does require the user's attention to potentially advance their career.",
+        "evidence": [
+          "We noticed your profile online and would like to explore potential synergies and collaboration opportunities with our stealth venture.",
+          "Please check our portal if interested."
+        ],
+        "analysis_version": "2.0.0"
+      },
+      "error": null,
+      "latency_seconds": 15.71578079999972
+    }
+  ]
+}

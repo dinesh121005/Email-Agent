@@ -1,0 +1,178 @@
+[
+  {
+    "id": "case_01",
+    "scenario": "Hackathon registration closes tomorrow",
+    "received_at": "2026-10-14T18:00:00-04:00",
+    "subject": "Reminder: HackAI 2026 Registration Closes Tomorrow",
+    "body": "Hi Hacker,\n\nThis is a final reminder that registration for HackAI 2026 will officially close tomorrow at 5:00 PM EST. Please make sure to submit your team details before the portal locks.\n\nBest,\nThe HackAI Team",
+    "expected": {
+      "category": "hackathon",
+      "intent": "hackathon",
+      "importance": "high",
+      "urgency": "urgent",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": "tomorrow at 5:00 PM EST"
+    }
+  },
+  {
+    "id": "case_02",
+    "scenario": "Data science internship interview invitation with deadline",
+    "received_at": "2026-10-14T09:00:00-04:00",
+    "subject": "Invitation to Interview: Data Science Intern at Acme Corp",
+    "body": "Dear Candidate,\n\nThank you for applying for the Data Science Intern position. We were impressed with your profile and would like to invite you for a 45-minute technical interview. Please choose an available slot on our scheduling portal by this Friday at 11:59 PM.\n\nRegards,\nAcme Recruiting Team",
+    "expected": {
+      "category": "job",
+      "intent": "interview_invitation",
+      "importance": "high",
+      "urgency": "high",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": "this Friday at 11:59 PM"
+    }
+  },
+  {
+    "id": "case_03",
+    "scenario": "General newsletter with no requested action",
+    "received_at": "2026-10-12T08:00:00-04:00",
+    "subject": "Python Weekly Issue #620: What's New in Python 3.13",
+    "body": "Hello Readers,\n\nWelcome to this week's edition of Python Weekly! In this issue, we cover the new features in Python 3.13, JIT compiler benchmarks, and top community open-source projects.\n\nEnjoy the read,\nThe Curators",
+    "expected": {
+      "category": "other",
+      "intent": "newsletter",
+      "importance": "low",
+      "urgency": "low",
+      "spam_status": "suspected_spam",
+      "requires_action": false,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_04",
+    "scenario": "Job application rejection",
+    "received_at": "2026-10-13T14:30:00-04:00",
+    "subject": "Update on your application for Machine Learning Engineer",
+    "body": "Dear Applicant,\n\nThank you for taking the time to interview with us for the Machine Learning Engineer role. While we were impressed with your background, we have decided to move forward with another candidate whose experience more closely matches our immediate needs.\n\nWe wish you the best in your job search.\n\nTalent Acquisition Team",
+    "expected": {
+      "category": "job",
+      "intent": "application_update",
+      "importance": "low",
+      "urgency": "low",
+      "spam_status": "not_spam",
+      "requires_action": false,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_05",
+    "scenario": "Competition submission deadline tonight",
+    "received_at": "2026-10-15T10:00:00+00:00",
+    "subject": "Final Call: Kaggle LLM Challenge Submission Closes at Midnight",
+    "body": "Participants,\n\nPlease note the final submission window for the Kaggle LLM Challenge closes tonight at 23:59 UTC. Late submissions cannot be accepted under any circumstances. Ensure your code notebooks are submitted and verified.\n\nGood luck,\nCompetition Organizers",
+    "expected": {
+      "category": "competition",
+      "intent": "competition",
+      "importance": "high",
+      "urgency": "urgent",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": "tonight at 23:59 UTC"
+    }
+  },
+  {
+    "id": "case_06",
+    "scenario": "Genuine interview invitation with no explicit response deadline",
+    "received_at": "2026-10-14T10:00:00+00:00",
+    "subject": "Software Development Engineer Intern - HackerRank Technical Screening",
+    "body": "Dear Candidate,\n\nThank you for your application to HackerRank. We would like to invite you for a 60-minute technical interview screening with our engineering lead. Please review the attached guidelines and let us know your general availability for next week.\n\nBest regards,\nHackerRank University Recruiting",
+    "expected": {
+      "category": "job",
+      "intent": "interview_invitation",
+      "importance": "high",
+      "urgency": "normal",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_07",
+    "scenario": "Interview happening in 2 hours",
+    "received_at": "2026-10-14T12:00:00+00:00",
+    "subject": "Reminder: Technical Interview starting at 2:00 PM today",
+    "body": "Hi there,\n\nThis is a quick reminder that your technical interview with Stripe starts today at 2:00 PM UTC on Google Meet.\n\nMeeting link: https://meet.google.com/xyz-abc-def\n\nStripe Recruiting",
+    "expected": {
+      "category": "job",
+      "intent": "interview_invitation",
+      "importance": "critical",
+      "urgency": "urgent",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": "today at 2:00 PM UTC"
+    }
+  },
+  {
+    "id": "case_08",
+    "scenario": "Naukri promotional email advertising profile views",
+    "received_at": "2026-10-13T11:00:00+00:00",
+    "subject": "Get up to 4x more profile views on Naukri",
+    "body": "Hi Dinesh,\n\nRecruiters are searching for candidates with your profile. Upgrade to Naukri FastForward today and get highlighted to 1000s of top companies. Avail special 30% discount.\n\nTeam Naukri",
+    "expected": {
+      "category": "other",
+      "intent": "promotional",
+      "importance": "low",
+      "urgency": "low",
+      "spam_status": "suspected_spam",
+      "requires_action": false,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_09",
+    "scenario": "Promotional email advertising job-tracking services",
+    "received_at": "2026-10-12T15:00:00+00:00",
+    "subject": "Track your job applications with Huntr Premium",
+    "body": "Tired of messy spreadsheets? Use Huntr auto-track chrome extension to automatically organize job applications from LinkedIn and Indeed. Start your 14-day free trial now.\n\nHuntr Team",
+    "expected": {
+      "category": "other",
+      "intent": "promotional",
+      "importance": "low",
+      "urgency": "low",
+      "spam_status": "suspected_spam",
+      "requires_action": false,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_10",
+    "scenario": "Direct recruiter communication for a specific role",
+    "received_at": "2026-10-14T08:30:00+00:00",
+    "subject": "Senior Python Backend Engineer Opportunity at Datadog",
+    "body": "Hi,\n\nI came across your GitHub open-source contributions and was very impressed. We have an opening for a Senior Python Engineer on our core agent team. Would you be open to a 15-minute introductory call sometime this week?\n\nSarah Jenkins\nSenior Technical Recruiter, Datadog",
+    "expected": {
+      "category": "job",
+      "intent": "job_opportunity",
+      "importance": "high",
+      "urgency": "normal",
+      "spam_status": "not_spam",
+      "requires_action": true,
+      "deadline": null
+    }
+  },
+  {
+    "id": "case_11",
+    "scenario": "Ambiguous email that may contain a real opportunity",
+    "received_at": "2026-10-14T14:00:00+00:00",
+    "subject": "Exciting collaboration and career opportunity inquiry",
+    "body": "Hello,\n\nWe noticed your profile online and would like to explore potential synergies and collaboration opportunities with our stealth venture. Please check our portal if interested.\n\nConfidential Talent Partner",
+    "expected": {
+      "category": "uncertain",
+      "intent": "uncertain",
+      "importance": "normal",
+      "urgency": "normal",
+      "spam_status": "suspected_spam",
+      "requires_action": false,
+      "deadline": null
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "name": "Dinesh Babu S",
+  "title": "AI/ML Engineer | Data Scientist",
+  "phone": "+91 63690 15600",
+  "email": "sdinesh2k06@gmail.com",
+  "linkedin": "https://linkedin.com/in/dinesh-babu-167a1431b",
+  "github": "https://github.com/dinesh121005",
+  "leetcode": "https://leetcode.com/u/dineshbabu1210",
+  "location": "Kovilpatti, Tamil Nadu",
+  "summary": "CSE undergraduate with production experience deploying ML systems in healthcare and agri-tech — spanning NLP pipelines, computer vision (YOLOv8), LLM integration, and agentic AI workflows. Grounded in statistics, probability, and core ML theory, with a strong drive toward applied research in deep learning, reinforcement learning, and scalable model optimization.",
+  "education": {
+    "institution": "National Engineering College, Kovilpatti",
+    "degree": "B.E. Computer Science Engineering",
+    "cgpa": "7.3/10",
+    "duration": "08/2023 – 05/2027",
+    "current_year": "Undergraduate"
+  },
+  "achievements": [
+    "Amazon ML Challenge - Top 100 nationwide out of 82,799 registered participants; advanced ML problem-solving in computer vision & NLP under competition conditions.",
+    "Flipkart Gridlock 2.0 ML Challenge - 91.3 percentile among thousands of engineers nationally in machine learning, data structures, and systems design.",
+    "Smart India Hackathon - selected as institutional representative; engineered a multilingual AI advisory system deployed across 3 languages for rural impact.",
+    "SSN Hackathon — Top 4 with special mention; built a real-time fraud detection engine with network flow visualization."
+  ],
+  "certifications": [
+    "Snowflake SnowPro Associate",
+    "IBM Machine Learning with Python",
+    "Kaggle Data Science Certificate",
+    "Anthropic Claude 101"
+  ],
+  "experience": [
+    {
+      "role": "AI Engineer Intern",
+      "company": "Adroit Soft Tech",
+      "duration": "01/2026 – 06/2026",
+      "location": "Kovilpatti",
+      "highlights": [
+        "Engineered an end-to-end AI Consultation Assistant (LLM + OpenAI Whisper), cutting manual data entry by 65% across 200+ daily patient interactions through agentic workflow automation.",
+        "Orchestrated an audio-to-prescription pipeline achieving 90% transcription accuracy on medical terminology, automating voice-to-structured-PDF prescriptions via Whisper + Gemini with zero manual intervention.",
+        "Designed a HIPAA-aligned FastAPI + MCP Server backend handling 500+ concurrent patient records with role-based access control and audit logging.",
+        "Delivered a React.js frontend dashboard for appointment & consultation management, accelerating clinical staff workflow efficiency by 80%."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Fraud Detection — Network Flow Simulation",
+      "event": "SSN Hackathon Top 4",
+      "tools": "Python, TensorFlow, Scikit-learn, Kafka, Docker, React.js, FastAPI, NetworkX",
+      "description": "Deployed a real-time fraud detection engine with network flow visualization and anomaly alerts; achieved Top 4 recognition at SSN College Hackathon with special mention among all teams."
+    },
+    {
+      "name": "AI Farmer Query Support & Advisory System",
+      "event": "Smart India Hackathon",
+      "tools": "YOLOv8, EfficientNet, OpenAI Whisper, FastAPI, React.js, NLP, Python, Google Cloud Platform",
+      "description": "Pioneered a multilingual agri-assistant combining YOLOv8 disease detection with Whisper voice support, delivering real-time smart farming guidance to rural farmers across 3 languages."
+    },
+    {
+      "name": "AI-Driven Pre-Authorization Automation System",
+      "event": "Cognizant Hackathon",
+      "tools": "Python, FastAPI, OCR, NLP, HL7/FHIR, PostgreSQL, React.js, N8N",
+      "description": "Spearheaded an NLP-driven pre-authorization engine using HL7/FHIR parsing and rule-based validation, reducing manual review time by 70% and boosting clinical data extraction accuracy to 95%+."
+    }
+  ],
+  "technical_skills": {
+    "languages": ["Python", "SQL", "C++", "C"],
+    "ai_ml": [
+      "PyTorch", "TensorFlow", "Scikit-learn", "YOLOv8", "LangChain", "LangGraph",
+      "HuggingFace Transformers", "LLM Fine-tuning", "RAG", "NLP", "Computer Vision",
+      "MLOps", "Agentic AI Workflows"
+    ],
+    "frameworks_and_apis": [
+      "FastAPI", "Flask", "Django", "Node.js", "OpenAI API", "Gemini API",
+      "Claude API", "OpenAI Whisper", "spaCy", "LangChain", "NLTK"
+    ],
+    "databases": ["PostgreSQL", "pgvector", "MongoDB", "MySQL", "Supabase"],
+    "devops_and_tools": [
+      "Docker", "GitHub Actions", "Git", "CI/CD", "Kafka", "Redis",
+      "Render", "Postman", "MLFlow", "Google Cloud", "N8N"
+    ],
+    "frontend": ["React.js", "Streamlit", "HTML5", "CSS3"]
+  }
+}
